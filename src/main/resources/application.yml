@@ -1,0 +1,18 @@
+chargepoint:
+  amperes:
+    max: 100
+spring:
+  application:
+    name: codingchallenge
+  flyway:
+    enabled: true
+    out-of-order: true
+    schemas: public
+    placeholderReplacement: false
+  datasource:
+    url: ${UBITRICITY_DB_CONNECTION_URL}
+    driverClassName: org.postgresql.Driver
+    username: ${UBITRICITY_DB_USERNAME}
+    password: ${UBITRICITY_DB_PASSWORD}
+server:
+  port: 9999

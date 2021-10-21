@@ -1,0 +1,18 @@
+chargepoint:
+  amperes:
+    max: 100
+spring:
+  application:
+    name: codingchallenge
+  flyway:
+    enabled: true
+    locations: "classpath:db/migration, classpath:testmigrations"
+  test:
+    database:
+      replace: none
+  datasource:
+    username: test
+    password: test
+    url: jdbc:tc:postgresql:13:///
+server:
+  port: 9999
